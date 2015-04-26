@@ -1,0 +1,20 @@
+{
+  "name": "hubot-eval",
+  "author": {
+    "name": "Stoyan Dimkov",
+    "email": "stoyan.dimkov@gmail.com"
+  },
+  "version": "1.0.0",
+  "description": "In-chat JS evaluation for Hubot for debug and hot-fix",
+  "main": "src/eval",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hubot-scripts",
+    "hubot",
+    "eval",
+    "debug"
+  ],
+  "license": "BSD"
+}
