@@ -106,7 +106,7 @@ module.exports = (robot) ->
     if auth res
       res.envelope.user.shell ||= {}
       res.envelope.user.shell[res.envelope.room] = true
-      res.reply 'Entered interactive shell mode!\nType "stop shell" to exit'
+      res.reply 'Entered interactive shell mode!\nType "exit shell" to exit'
 
 
 
