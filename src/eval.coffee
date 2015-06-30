@@ -36,7 +36,9 @@ module.exports = (robot) ->
 
   # Redirect console.log() to caller's chat room
   evalRoom = ''
-  console = log: (obj) -> robot.messageRoom evalRoom, obj.toString()
+  console = log: (obj) ->
+    robot.messageRoom evalRoom, obj.toString()
+    return undefined
 
 
   # Private: evaluate javascript code snippet (String)
