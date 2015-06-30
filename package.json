@@ -4,7 +4,7 @@
     "name": "Stoyan Dimkov",
     "email": "stoyan.dimkov@gmail.com"
   },
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "In-chat JS evaluation for Hubot for debug and hot-fix",
   "main": "src/eval",
   "keywords": [
