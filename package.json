@@ -17,14 +17,13 @@
     "type": "git",
     "url": "https://github.com/sdimkov/hubot-eval.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/sdimkov/hubot-eval/master/LICENSE"
-    }
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sdimkov/hubot-eval/issues"
+  },
+  "homepage": "https://github.com/sdimkov/hubot-eval",
   "readmeFilename": "README.md"
 }
