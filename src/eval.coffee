@@ -1,14 +1,14 @@
 # Description:
 #   In-chat JavaScript evaluation and REPL shell mode. Useful for
 #   debugging live Hubot instance or hot fixing. The Robot object
-#   is accesible within the context of the evaluation which means 
+#   is accesible within the context of the evaluation which means
 #   that all the internals of Hubot can be accessed and modified.
-#   
+#
 # Dependencies:
 #   "hubot-auth": ~"1.2.0"
 #
 # Configuration:
-#   HUBOT_EVAL_ROLES - A comma separate list of roles allowed  
+#   HUBOT_EVAL_ROLES - A comma separate list of roles allowed
 #                      to evaluate JavaScript code in-chat.
 #
 # Commands:
@@ -26,7 +26,7 @@
 
 # Configure eval-allowed roles
 roles = ['admin']
-if process.env.HUBOT_EVAL_ROLES 
+if process.env.HUBOT_EVAL_ROLES
   newRoles = process.env.HUBOT_EVAL_ROLES.split ','
   roles.push role for role in newRoles when role not in roles
 
@@ -42,9 +42,9 @@ module.exports = (robot) ->
 
 
   # Private: evaluate javascript code snippet (String)
-  # 
+  #
   # code - A String containing valid JavaScript snippet
-  # 
+  #
   # Returns parsed and formatted results from execution
   evaluate = (code) ->
     try
@@ -57,9 +57,9 @@ module.exports = (robot) ->
 
 
   # Private: authorizes user calls for evaluation
-  # 
+  #
   # res - A Response object for evaluation call
-  # 
+  #
   # Returns true when authorized and false when not
   auth = (res) ->
     user = res.envelope.user
@@ -113,7 +113,7 @@ module.exports = (robot) ->
 
 
   # Alternative implementaiton that uses hear all matcher and doesn't wrap
-  # robot#receive function. Has the following drawback - all messages get 
+  # robot#receive function. Has the following drawback - all messages get
   # caught so robot#catchAll effectively stops working
   #
   # robot.hear /(.+)/, (res) ->
